@@ -1,0 +1,157 @@
+.wpforms-container {
+    max-width: 800px;
+    color: #212529;
+    font-family: Georgia, 'Times New Roman', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  div.wpforms-container-full .wpforms-form .wpforms-field {
+    padding: 20px 0;
+  }
+  
+  input {
+    border: 0 !important;
+    border-bottom: 1px solid #212529 !important;
+  }
+  
+  textarea {
+    border: 0 !important;
+    border-bottom: 1px solid #212529 !important;
+  }
+  
+  .wpforms-submit-container button {
+    border: 0 !important;
+  }
+  
+  div.wpforms-container-full .wpforms-form button[type=submit] {
+    padding: 10px 34px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+    font-family: 'Georgia', serif;
+    letter-spacing: 0.07em !important;
+  }
+  
+  div.wpforms-container-full .wpforms-form input[type=date], div.wpforms-container-full .wpforms-form input[type=datetime], div.wpforms-container-full .wpforms-form input[type=datetime-local], div.wpforms-container-full .wpforms-form input[type=email], div.wpforms-container-full .wpforms-form input[type=month], div.wpforms-container-full .wpforms-form input[type=number], div.wpforms-container-full .wpforms-form input[type=password], div.wpforms-container-full .wpforms-form input[type=range], div.wpforms-container-full .wpforms-form input[type=search], div.wpforms-container-full .wpforms-form input[type=tel], div.wpforms-container-full .wpforms-form input[type=text], div.wpforms-container-full .wpforms-form input[type=time], div.wpforms-container-full .wpforms-form input[type=url], div.wpforms-container-full .wpforms-form input[type=week], div.wpforms-container-full .wpforms-form select, div.wpforms-container-full .wpforms-form textarea {
+    letter-spacing: 0.05em !important;
+    padding: 6px 18px !important;
+    color: #212529 !important;
+    border-radius: initial !important;
+  }
+
+  // no message box
+  .col-lg-6 div.wpforms-container-full .wpforms-form input[type=date], div.wpforms-container-full .wpforms-form input[type=datetime], div.wpforms-container-full .wpforms-form input[type=datetime-local], div.wpforms-container-full .wpforms-form input[type=email], div.wpforms-container-full .wpforms-form input[type=month], div.wpforms-container-full .wpforms-form input[type=number], div.wpforms-container-full .wpforms-form input[type=password], div.wpforms-container-full .wpforms-form input[type=range], div.wpforms-container-full .wpforms-form input[type=search], div.wpforms-container-full .wpforms-form input[type=tel], div.wpforms-container-full .wpforms-form input[type=text], div.wpforms-container-full .wpforms-form input[type=time], div.wpforms-container-full .wpforms-form input[type=url], div.wpforms-container-full .wpforms-form input[type=week], div.wpforms-container-full .wpforms-form select {
+  height: 3em !important;
+  }
+
+  .contact-details {
+    color: #fff;
+    position: relative;
+  }
+
+  .contact-details__col {
+    @include md {
+      padding: 0 15px;
+    }
+  }
+
+  .contact-details__col h3 {
+    @include lg {
+      font-size: 2.3rem;
+    }
+  }
+
+  .contact-details__col h3:first-of-type {
+    margin-top: 16px;
+    @include lg {
+      margin-top: 40px;
+    }
+  }
+
+  .contact-details__col p {
+    @include lg {
+      font-size: 15px;
+    }
+  }
+
+  .contact-detials__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #242527;
+    opacity: .7;
+  }
+
+  .contact-detials__header {
+    margin-top: 20px;
+    margin-bottom: 42px;
+    @include lg {
+      margin-bottom: 133px;
+      font-size: 4em;
+    }
+    @include xxl {
+      margin-bottom: 181px;
+    }
+  }
+
+  .contact-details a {
+    color: #fff;
+  }
+  
+  .contact-details span {
+    display: block;
+    margin: 10px 0;
+    max-width: 90%;
+  }
+  
+  .contact-details p {
+    @include md {
+      max-width: 90%;
+    }
+    @include lg {
+      max-width: 400px;
+    }
+  }
+
+  .contact-block__inner {
+    padding: 100px 0;
+    @include lg {
+      padding: 195px 0 285px;
+    }
+    @include xxl {
+      padding: 245px 0 285px;
+    }
+  }
+
+.wpforms-submit {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.contact-image {
+  height: 325px;
+  position: relative;
+  margin-top: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: content-box;
+  @include lg {
+    height: 400px;
+  }
+}
+
+div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
+  height: 170px !important;
+}
+
+.wpforms-confirmation-container-full {
+  color: $dark-text !important;
+  margin: 0 0 24px 0 !important;
+  background: transparent !important;
+  border: 1px solid #4b4b4b !important;
+  padding: 15px 15px !important;
+}

@@ -1,0 +1,273 @@
+.parallax {
+    // min-height: 650px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .parallax-one {
+    height: 93vh;
+  }
+  
+  .parallax-two {
+    // background-size: auto 75%;
+    background-position: bottom;
+  }
+
+  .parallax--small {
+    height: 500px;
+    min-height: 300px;
+    @include xlhd {
+      height: 600px;
+    }
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+     flex-direction: column;
+     bottom: 0;
+     top: 0;
+     left: 0;
+     right: 0;
+    text-align: center;
+  }
+  
+  .flex--alt {
+    justify-content: flex-end;
+    align-items: initial;
+  }
+  
+  .parallax p {
+    display: block;
+      max-width: 600px;
+      margin: 0 auto;
+    font-size: 2em;
+   }
+
+   .parallax-one:after {
+     content: "";
+     position: absolute;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     background: #000;
+     opacity: 0.1;
+   }
+
+   .parallax-two:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: black;
+    opacity: 0.1;
+   }
+
+   .parallax__inner {
+     z-index: 1;
+   }
+  
+  .top {
+    p {
+      display: block;
+    }
+  }
+  
+  .main-heading {
+    font-size: 3.9em;
+    color: #fff;
+  }
+  
+  .sub-heading {
+    font-family: 'Georgia', serif;
+    display: block;
+    padding-top: 20px;
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+    @include lg {
+      font-size: 1.5em;
+    }
+  }
+  
+  .image {
+    background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    min-height: 350px;
+    @include lg {
+      min-height: 475px;
+    }
+    @include xl {
+      min-height: 550px;
+    }
+    @include xxl {
+      min-height: 580px;
+    }
+  }
+
+  .home-block {
+    padding: 35px 15px;
+    @include md {
+      padding: 8% 6%;
+    }
+    @include lg {
+      padding: 8% 10%;
+    }
+  }
+
+  .intro-text-max-width {
+    max-width: 560px;
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 5em;
+  }
+  
+// 
+// Category section
+// 
+
+.home-cat {
+  display: block;
+  height: 300px;
+  // min-height: 300px;
+  position: relative;
+}
+
+.home-cat__row {
+  @include md {
+    padding: 0 15px;
+  }
+}
+
+.home-cat__link {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  z-index: 1;
+  text-align: center;
+  @include xl {
+    font-size: 1.4rem;
+  }
+}
+
+.home-cat__image:nth-of-type(1)  {
+  background-image: url("http://www.lenkamikulova.com/wp-content/uploads/2019/03/Wedding-category-md.jpg");
+}
+
+.home-cat__image:nth-of-type(3)  {
+  background-image: url("http://www.lenkamikulova.com/wp-content/uploads/2019/03/portraits-hp.jpg");
+}
+
+.home-cat__image:nth-of-type(2)  {
+  background-image: url("http://www.lenkamikulova.com/wp-content/uploads/2019/03/Family-and-kids-category-md.jpg");
+}
+
+.home-cat__image:nth-of-type(4)  {
+  background-image: url("http://www.lenkamikulova.com/wp-content/uploads/2019/03/Boudoir-category-md.jpg");
+}
+
+.home-cat__image {
+  position: relative;
+  margin-top: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: content-box;
+  padding: 7.5px;
+  @include lg {
+    margin: 0;
+    padding: 0 7.5px;
+  }
+}
+
+.home-cat:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  transition: opacity 0.3s ease;
+  background: black;
+  opacity: 0.1;
+}
+
+.home-cat:hover:after {
+  opacity: 0.3;
+}
+
+.section {
+  margin: 60px 0;
+  @include lg {
+    margin: 80px 0;
+  }
+  @include xl {
+    margin: 95px 0;
+  }
+}
+
+.section--gallery {
+  margin: 35px 0;
+  @include md {
+    margin: 95px 0;
+  }
+}
+
+.section--testamonial {
+  margin: 70px 0 80px;
+  @include md {
+    margin: 70px 0 95px;
+  } 
+}
+
+.section--top-padding {
+  margin: 75px 0 95px;
+}
+
+// .section--max-height {
+//   @include md {
+//     max-height: 1318px;
+//   overflow: hidden;
+//   }
+  
+// }
+
+// Gallery
+// .psgal_wrap {
+//   @include md {
+//     height: 87% !important;
+//     overflow: hidden;
+//   }
+//   @include xl {
+//     height: 82% !important;
+//     overflow: hidden;
+//   }
+// }
+
+.about a {
+  font-weight: 500;
+}
+
+// .home-cat__row .home-cat__image:first-of-type {
+//   padding-left: 0 !important;
+// } 
+
+// .home-cat__row .home-cat__image:last-of-type {
+//   padding-right: 0 !important;
+// } 
+
+.col--home {
+  @include xl {
+    max-width: 1500px;
+  }
+}

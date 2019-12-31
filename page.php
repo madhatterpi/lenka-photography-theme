@@ -24,12 +24,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
-		<div class="row">
-
-			<!-- Do the left sidebar check -->
-			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
-
 			<main class="site-main" id="main">
+
+			<div class="row">
+    <div class="col-md-6 text-center my-5 mx-auto">  
+
+    <header>
+      <h1 class="page-header page-header--no-margin"><?php the_title() ?></h1>
+	  </header><!-- .entry-header -->
+  
+	</div>
+   </div>
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
@@ -45,11 +50,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<?php endwhile; // end of the loop. ?>
 
 			</main><!-- #main -->
-
-			<!-- Do the right sidebar check -->
-			<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
-
-		</div><!-- .row -->
 
 	</div><!-- #content -->
 

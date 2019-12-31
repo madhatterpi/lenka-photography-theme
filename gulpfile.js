@@ -135,7 +135,9 @@ gulp.task( 'scripts', function() {
 
         // End - All BS4 stuff
 
-        paths.dev + '/js/skip-link-focus-fix.js',
+        paths.dev + '/js/skip-link-focus-fix.js',   
+
+        paths.dev + '/js/skip-link-focus-fix.js',  
 
         // Adding currently empty javascript file to add on for your own themes´ customizations
         // Please add any customizations to this .js file only!
@@ -174,6 +176,7 @@ gulp.task( 'copy-assets', function() {
 
 ////////////////// End Bootstrap 4 Assets /////////////////////////
 
+
 // Copy all Font Awesome Fonts
     gulp.src( paths.node + 'font-awesome/fonts/**/*.{ttf,woff,woff2,eot,svg}' )
         .pipe( gulp.dest( './fonts' ) );
@@ -184,7 +187,7 @@ gulp.task( 'copy-assets', function() {
 
 // _s SCSS files
     gulp.src( paths.node + 'undescores-for-npm/sass/media/*.scss' )
-        .pipe( gulp.dest( paths.dev + '/sass/underscores' ) );
+        .pipe( gulp.dest( paths.dev + '/sass/underscores' ) );    
 
 // _s JS files into /src/js
     gulp.src( paths.node + 'undescores-for-npm/js/skip-link-focus-fix.js' )

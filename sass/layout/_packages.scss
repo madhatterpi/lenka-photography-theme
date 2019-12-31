@@ -1,0 +1,159 @@
+.packages__about {
+  padding: 15px 0;
+  position: relative;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.packages__about::first-letter {
+  text-transform: capitalize;
+}
+
+.packages__about:after {
+  content: "";
+  display: block;
+  width: 95px;
+  height: 1px;
+  background: #d5d5d5;
+  margin: 0 auto;
+  position: relative;
+  bottom: -15px;
+}
+
+.packages__price {
+  margin: 14px 0 0;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.packages-s__row {
+  max-width: 764px;
+}
+
+.packages-s__header {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+}
+
+.packages-s__price {
+  max-width: 764px;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0;
+}
+
+.packages__header {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.packages__header--extra-padding {
+  padding-bottom: 15px;
+}
+
+.paragraph-margin-lg {
+  margin: 20px 0 40px;
+  font-size: 13px;
+}
+
+.paragraph-margin-lg--bold {
+  font-weight: 600;
+}
+
+.card {
+  margin: 0 auto;
+  max-width: 340px;
+}
+
+.card-body {
+  // border: 1px solid #dedede;
+    padding: 30px 15px 40px;
+    // box-shadow: 0px 0px 16px 1px #e7e7e7;
+    height: 460px;
+    box-shadow: 0px 0px 10px 1px rgba(232, 232, 232, 0.75);
+    background-color: #fff;
+}
+
+.packages__extras p {
+  margin-bottom: 0.6rem;
+}
+
+.page-id-253 .card-body {
+  height: 378.5px;
+}
+
+.card-img-caption {
+  position: relative;
+  overflow: hidden;
+  max-height: 178px;
+}
+  
+.card-img-caption .card-img-top {
+  z-index: 0;
+}
+    
+.card-img-caption .card-text {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  position: absolute;
+  color: white;
+  font-weight: 600;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.card-img-caption:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 250px;
+  height: 10px;
+  background: #fff;
+  transform: skewX(-45deg);
+  bottom: 0;
+  margin-left: 5px;
+}
+
+.card-img-caption:before {
+  content: "";
+  position: absolute;
+  right: 50%;
+  width: 250px;
+  height: 10px;
+  background: #fff;
+  transform: skewX(45deg);
+  bottom: 0;
+  margin-right: 5px;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #292929;
+  opacity: 0.55;
+}
+
+.card-text__span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.card-text__span:before, .card-text__span:after {
+  content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 3px;
+    background: #fff;
+    margin: 0 10px 5px;
+}

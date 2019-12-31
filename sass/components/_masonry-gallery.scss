@@ -1,0 +1,97 @@
+.gallery-wrapper {
+  @include md {
+    padding: 0 2em;
+  }
+}
+
+.msnry_item a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    // visibility: hidden;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 0;
+  }
+
+  .msnry_item a:hover:after {
+    opacity: 1;
+}
+  
+  .msnry-item:hover a > div,
+  .msnry-item:hover a:after {
+      opacity: 1;
+      visibility: visible;
+  }
+  
+  .psgal a {
+    position: relative;
+  }
+
+  .overlay-hover {
+    opacity: 0.4;
+  }
+  
+  .psgal {
+    width: 100% !important;
+    padding-bottom: 0 !important;
+  }
+
+  .psgal figure {
+    padding: 7.5px 0 !important;
+    @include md {
+      padding: 5px 7.5px !important;
+    }
+  }
+
+  // .psgal figure {
+  //   padding: 7.5px 0 !important;
+  //   @include md {
+  //     padding: 6px 9px !important;
+  //     // padding: 7.5px !important;
+  //   }
+  // }
+  
+  // .home .psgal figure {
+  //   width: 100% !important;
+  //   @include md {
+  //     width: 50% !important;
+  //   }
+  //   @include xl {
+  //     width: 25% !important;
+  //   }
+  // }
+
+  .psgal figure {
+    width: 100% !important;
+    @include md {
+      width: 50% !important;
+    }
+    @include xl {
+      width: 33.333% !important;
+    }
+  }
+  
+  .psgal_load_more {
+    background-color: #eee;
+    color: #333;
+    font-size: 1em;
+    padding: 10px 15px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    transition: background-color 0.2s ease;
+    margin: 40px auto !important;
+  }
+
+  .psgal_load_more:hover {
+    background-color: #ddd;
+  }

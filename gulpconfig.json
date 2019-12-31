@@ -1,6 +1,6 @@
 {
   "browserSyncOptions" : {
-    "proxy": "localhost/",
+    "proxy": "localhost/lenka-photography/",
     "notify": false
   },
   "browserSyncWatchFiles" : [

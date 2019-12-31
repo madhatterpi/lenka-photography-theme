@@ -1,0 +1,146 @@
+.footer {
+  padding: 45px 0 20px;
+}
+
+.footer__note {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.footer__note h3 {
+  font-weight: 600;
+  font-size: 23px;
+  @include lg {
+    
+  }
+}
+
+.footer__details {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 15px;
+  @include lg {
+    flex-direction: row;
+    text-align: initial;
+    padding: 0 17%;
+  }
+}    
+
+.footer-details-block {
+  flex: 1;
+  margin-top: 24px;
+  p {
+    margin: 0;
+    font-weight: 500;
+  }
+}
+
+.footer-details-block:nth-of-type(2) {
+  flex: 2;
+}
+
+.footer-details-block__legal p {
+  font-size: 16px;
+  text-transform: capitalize;
+  line-height: 30px;
+}
+
+.footer-details-block__contact {
+  order: 1;
+  text-align: center;
+  padding: 0 5%;
+  font-style: italic;
+  @include md {
+    padding: 0;
+  }
+}
+
+.footer-details-block__contact p {
+  font-family: 'Georgia', serif;
+  font-size: 17px;
+}
+
+.footer-contact-us {
+  text-transform: capitalize;
+}
+
+.footer-details-block__social {
+  @include lg {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    float: right;
+  }
+}
+
+.footer-details-block__social a {
+  margin-right: 18px;
+  @include lg {
+    margin-right: 20px;
+    line-height: 15px;
+    padding: 4px;
+  }
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+.footer-icon {
+  font-size: 22px;
+}
+
+.footer__bottom {
+  font-family: 'Georgia', serif;
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 20px;
+}
+
+// order footer blocks
+.footer-details-block:nth-of-type(1) {
+  order: 3;
+  @include lg {
+    order: initial;
+  }
+}
+
+.footer-details-block:nth-of-type(2) {
+  order: 1;
+  @include lg {
+    order: initial;
+  }
+}
+
+.footer-details-block:nth-of-type(3)  {
+  order: 1;
+  @include lg {
+    order: initial;
+  }
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 7%;
+  right: 0;
+  z-index: 1;
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  line-height: 38px;
+  background-color: $dark-text;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out, background-color 0.2s ease-out;
+  opacity: 0;
+  font-size: 18px;
+}
+#back-to-top:hover {
+  background-color: darken($dark-text, 25%);
+}
+#back-to-top.show {
+  opacity: 0.9;
+}
+

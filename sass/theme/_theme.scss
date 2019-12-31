@@ -1,1 +1,308 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+
+$brand: #bc3931;
+$dark-text: #212529;
+
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  font-family: 'Georgia', serif;
+}
+
+.site {
+  padding: 74px 0 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.bold-md {
+  font-weight: 500;
+}
+
+.row-padding-lr {
+  padding: 0 15px;
+}
+
+.site {
+  display: flex;
+  min-height: 81vh;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex: 1;
+}
+
+.col--max-width {
+  max-width: 1360px;
+}
+
+a {
+  font-family: 'Georgia', serif;
+  color: $dark-text;
+  transition: color 0.2s ease;
+  &:hover {
+    color: $brand;
+  }
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.page-header {
+ font-size: 3rem;
+ text-align: center;
+ margin-bottom: 60px;
+ position: relative;
+}
+
+.page-header::after {
+  border-bottom: 1px solid #212529;
+    content: "";
+    position: absolute;
+    top: 118%;
+    width: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.page-header--small {
+  font-size: 2.3rem;
+  margin-bottom: 35px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-header--no-margin {
+  margin: 0;
+}
+
+.page-header--extra-margin {
+  margin-bottom: 52.5px;
+}
+
+.container--grey-background {
+  background: #f7f7f5;
+}
+
+.font-sans-serif {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-column {
+  margin: 1.5rem auto;
+  @include xl {
+    margin: initial;
+  }
+}
+
+.about-column--text {
+  @include xxl {
+    margin-top: 15px;
+  }
+}
+
+.container--large {
+  max-width: 1200px;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.gallery {
+    max-width: 100%;
+}
+
+.items {
+    padding: 0 !important;
+}
+
+.grid {
+  background: #DDD;
+  max-width: 1200px;
+}
+
+.centered-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container--max-width {
+  max-width: 1280px !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #212529;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: #b70000;
+}
+
+.navbar-light .navbar-brand {
+  color: #212529;
+}
+
+.container--lg {
+  @include xlhd {
+    width: 90%;
+    max-width: 1380px;
+  }
+}
+
+.col-max-width-620 {
+  max-width: 620px;
+}
+
+// 
+// Gallery
+// 
+
+#overlay-hover {
+  opacity: 0.4;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+  background: black;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.slider-header {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+// 
+// Slick slider 
+// 
+
+.slider {
+  margin: 60px 0;
+}
+
+.slider__author {
+  font-family: 'Georgia', serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.slider__avatar {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  margin: 0 auto;
+  margin-bottom: 18px;
+}
+
+.my-slider {
+  text-align: center;
+}
+
+.slick-slde {
+  margin-bottom: 12px;
+}
+
+.slick-track {
+  margin-bottom: 15px;
+}
+
+.slick-next:before, .slick-prev:before {
+  color: $dark-text;
+  @include md {
+    font-size: 24px;
+  }
+}
+
+.slick-next, .slick-prev {
+  top: 54%;
+  display: none !important;
+  @include md {
+    display: block !important;
+  }
+}
+
+.fa-chevron-right {
+  position: absolute;
+  top: 52%;
+  right: 0;
+  @include md {
+    right: -75px;
+  }
+}
+
+.fa-chevron-left {
+  position: absolute;
+  top: 52%;
+  left: 0;
+  @include md {
+    left: -75px;
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background: white;
+}
+
+.slick-arrow {
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  transform: translateY(-50%);
+  margin: 0 10px;
+  z-index: 1;
+  display: none !important;
+  @include md {
+    display: block !important;
+  }
+}
+
+// Admin Area
+// ACF 
+.wp-admin .acf-table>thead>tr>th {
+  font-weight: 600 !important;
+}
+
+// 404
+.lost-links a {
+  padding-right: 10px;
+}
+
+.lost-links a:last-of-type {
+  padding: 0;
+}

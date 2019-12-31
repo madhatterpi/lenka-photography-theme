@@ -7,44 +7,73 @@
  * @package understrap
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
+if (!defined('ABSPATH')) {
+    exit; // Exit if accessed directly.
 }
 
-$container = get_theme_mod( 'understrap_container_type' );
+$container = get_theme_mod('understrap_container_type');
 ?>
 
-<?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-<div class="wrapper" id="wrapper-footer">
 
-	<div class="<?php echo esc_attr( $container ); ?>">
 
-		<div class="row">
+	<footer class="footer">
 
-			<div class="col-md-12">
+	<a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 
-				<footer class="site-footer" id="colophon">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col">
+					<div class="footer__inner">
 
-					<div class="site-info">
+					<!-- <div class="footer__note">
+				<h3 class="text-uppercase">enquire about availability</h3>
+				</div> -->
 
-						<?php understrap_site_info(); ?>
+			<div class="footer__details">
 
-					</div><!-- .site-info -->
+				<div class="footer-details-block">
+					<div class="footer-details-block__legal">
+					    <p><a href="<?php echo get_home_url(); ?>/privacy policy">privacy policy</a></p>
+					</div>
+				</div>
 
-				</footer><!-- #colophon -->
+				<div class="footer-details-block">
+					<div class="footer-details-block__contact">
+						<p><span class="footer-contact-us"><?php pll_e( "contact me at" ); ?></span> <a class="text-underline" href="mailto:photo@lenkamikulova.com?Subject=Photography%20Enquiry">photo@lenkamikulova.com</a></p>
+					</div>
+				</div>
 
-			</div><!--col end -->
+				<div class="footer-details-block">
+					<div class="footer-details-block__social">
+						<a href="https://www.facebook.com/Lenka-Mikulova-Photographer-649006628544261/"><i class="footer-icon fab fa-facebook-f"></i></a>
+						<a href="https://www.instagram.com/lenkahamerska"><i class="footer-icon fab fa-instagram"></i></a>
+						<a href="#"><i class="footer-icon fab fa-pinterest-p"></i></a>
+					</div>
+				</div>
 
-		</div><!-- row end -->
+			</div>
 
-	</div><!-- container end -->
+			<div class="footer__bottom">
+					<p>Lenka Mikulova &copy; <?php echo date("Y"); ?> Web design by <a target="_blank" href="https://www.peterbateman.co.uk">Peter Bateman</a></p>
+				</div>
 
-</div><!-- wrapper end -->
+					</div> <!--footer__inner -->
+
+				</div>
+			</div>
+		</div>
+
+
+
+	</footer><!-- #colophon -->
+
 
 </div><!-- #page we need this extra closing tag here -->
 
-<?php wp_footer(); ?>
+<?php wp_footer();?>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 </body>
 
